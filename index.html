@@ -29,15 +29,27 @@
                 </div>
             </div>
         </div>
-        <div class="dice" id="zombieDie">
+        <div class="diceRoll">
+          <div class="dice" id="zombieDie">
+          </div>
+          <div class="dice2" id="userDie">
+          </div>
+          <br>
         </div>
-        <div class="dice" id="userDie">
+        <div class="rollDiv">
+          <button type="button" name="button" onclick="rollDice()">ROLL THE DICE</button>
         </div>
-        <button type="button" name="button" onclick="rollDice()"></button>
-        <h2 id='status' style='clear:left;'></h2> 
+        <div class="rollDiv">
+          <h2 id='status'></h2>
+        </div>
+
     </main>
     <footer>
     </footer>
 </body>
-
+<script
+  src="https://code.jquery.com/jquery-3.1.1.min.js"
+  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+  crossorigin="anonymous"></script>
+<script src="zombie.js" charset="utf-8"></script>
 </html>
