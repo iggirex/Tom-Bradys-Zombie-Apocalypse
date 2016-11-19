@@ -83,7 +83,7 @@ function setBoard(territories) {
 			[territory.coordinates[3][1], territory.coordinates[3][0]]
 		], {color: color}).addTo(map)
 
-		polygon.bindPopup(territory.name);
+		// polygon.bindPopup(territory.name);
 		// placeMarkers(territory);
 	}
 }
