@@ -6,6 +6,7 @@ map = L.map('map', {
 	zoom: 11
 });
 
+
 var popup = L.popup();
 
 function onMapClick(e) {
