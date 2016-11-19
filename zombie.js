@@ -15,3 +15,5 @@ function rollDice() {
     //code for when user wins roll
   }
 }
+
+{/* <h2 id='status' style='clear:left;'></h2> */} add to html later
