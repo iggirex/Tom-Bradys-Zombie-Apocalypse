@@ -16,4 +16,4 @@ function rollDice() {
   }
 }
 
-{/* <h2 id='status' style='clear:left;'></h2> */} add to html later
+{/* */} add to html later
