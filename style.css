@@ -14,7 +14,10 @@ header {
 #map {
 	height: 80vh;
 }
-
+.center {
+  display: flex;
+  justify-content: center;
+}
 .controls {
 	background: rgba(14, 14, 14, .5);
 	height: 95vh;
