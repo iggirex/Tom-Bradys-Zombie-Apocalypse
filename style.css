@@ -3,3 +3,22 @@
     margin-left: auto;
     margin-right: auto;
  }
+
+.diceRoll {
+  display: flex;
+  justify-content: center;
+}
+.dice {
+  border: 2px black solid;
+  height: 100px;
+  width: 100px;
+}
+.dice2 {
+  border: 2px black solid;
+  height: 100px;
+  width: 100px;
+}
+.rollDiv {
+  display: flex;
+  justify-content: center;
+}
