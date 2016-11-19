@@ -1,3 +1,7 @@
+#map {
+	height: 70vh;
+}
+
 .center-block {
     display: block;
     margin-left: auto;
