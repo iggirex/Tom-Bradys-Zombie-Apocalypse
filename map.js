@@ -1,3 +1,4 @@
+
 var mapLayer = MQ.mapLayer(), map;
 
 map = L.map('map', {

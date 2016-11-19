@@ -31,15 +31,28 @@ header {
   display: flex;
   justify-content: center;
 }
+#status{
+  color: white;
+}
 .dice {
   border: 2px black solid;
   height: 100px;
   width: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48;
 }
 .dice2 {
   border: 2px black solid;
   height: 100px;
   width: 100px;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 48;
 }
 .rollDiv {
   display: flex;
