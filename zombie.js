@@ -6,14 +6,17 @@ function rollDice() {
   let zDie = Math.floor(Math.random() * 6) + 1
   let uDie = Math.floor(Math.random() * 6) + 1
   let diceTotal = zDie + uDie
-  zombieDie.innerHTML = zDie
-  userDie.innerHTML = uDie
+  $("#zombieDie").attr("src","images/b"+zDie+".png");
+  $("#userDie").attr("src","images/r"+uDie+".png");
 
   if(zDie === uDie) {
     status.innerHTML += "Tie... roll again"
+    $("#winner").attr("src","images/tie.jpg");
+
   } else if (zDie > uDie) {
-    //code for when zombies win roll
+    $("#winner").attr("src","images/zombie.gif");
+
   }else{
-    //code for when user wins roll
+    $("#winner").attr("src","images/zombie_killer.jpg");
   }
 }

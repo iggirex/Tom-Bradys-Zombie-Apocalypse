@@ -34,7 +34,7 @@ header {
 #status{
   color: white;
 }
-.dice {
+.dice img {
   border: 2px black solid;
   height: 100px;
   width: 100px;
@@ -44,7 +44,7 @@ header {
   align-items: center;
   font-size: 48;
 }
-.dice2 {
+.dice2 img{
   border: 2px black solid;
   height: 100px;
   width: 100px;
@@ -57,4 +57,17 @@ header {
 .rollDiv {
   display: flex;
   justify-content: center;
+}
+#roll{
+	height: 100px;
+	width: 200px;
+	background-image:url(images/rollthedice.jpg);
+	background-size:cover;
+}
+
+#winner{
+	height: 100px;
+	width: 100px;
+	margin-left:30%;
+	margin-top: 10%;
 }
