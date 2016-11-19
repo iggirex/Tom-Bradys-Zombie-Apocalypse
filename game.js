@@ -158,7 +158,7 @@ function playerTurn(player) {
 		newTroops += 1;
 	}
 
-	playerSpendsCards(player)
+	spendPoints(player)
 
 	// Player place markers
 
@@ -184,7 +184,7 @@ function spendPoints(player) {
 		let message = "Do you want to buy more troops? You can get 30 more troops!";
 	}
 
-	
+
 
 
 }
