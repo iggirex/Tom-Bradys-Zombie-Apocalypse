@@ -2,13 +2,13 @@ let territories = neighborHoods;
 
 let user = {
 	territories: [],
-	numberOfGuys: 0,
+	troopCount: 0,
 	points: 0
 };
 
 let zombies = {
 	territories: [],
-	numberOfGuys: 0,
+	troopCount: 0,
 	points: 0
 };
 
@@ -55,10 +55,12 @@ function assignTerritories(territories) {
 
 	for (territory of userTerritories) {
 		territory.owner = 'user';
+		user.troopCount += territory.troops;
 	}
 
 	for (territory of zombiesTerritories) {
-		territory.owner = 'zombies'
+		territory.owner = 'zombies';
+		zombies.troopCount += territory.troops;
 	}
 
 	let assignedTerritories = zombiesTerritories.concat(userTerritories);
@@ -77,19 +79,38 @@ function setBoard(territories) {
 		}
 
 		let polygon = L.polygon([
-			[territory.coordinates[0][1], territory.coordinates[0][0]],
-			[territory.coordinates[1][1], territory.coordinates[1][0]],
-			[territory.coordinates[2][1], territory.coordinates[2][0]],
-			[territory.coordinates[3][1], territory.coordinates[3][0]]
+			territory.coordinates[0].reverse(),
+			territory.coordinates[1].reverse(),
+			territory.coordinates[2].reverse(),
+			territory.coordinates[3].reverse()
 		], {color: color}).addTo(map)
 
 		polygon.bindPopup(territory.name);
-		// placeMarkers(territory);
+		placeMarkers(territory, color);
 	}
 }
-//
-// // TODO placeMarkers(territories)
-//
+
+function placeMarkers(territory, color) {
+	let long = 0;
+	let lat = 0;
+
+	for (point of territory.coordinates) {
+		long += point[0];
+		lat += point[1];
+	}
+
+	long = long / territory.coordinates.length;
+	lat = lat / territory.coordinates.length;
+
+	let marker = L.marker([long, lat]).addTo(map);
+
+	for(var i = 1; i < territory.troops; i++) {
+		let center = [long, lat];
+		let newPoint = [(long + territory.coordinates[i][0]) / 2, (lat + territory.coordinates[i][1]) / 2]
+		let marker = L.marker(newPoint).addTo(map);
+	}
+}
+
 // function playerTurn(player) {
 //
 // 	// Player spend cards
