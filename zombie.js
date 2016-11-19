@@ -16,5 +16,4 @@ function rollDice() {
   }else{
     //code for when user wins roll
   }
-
 }
