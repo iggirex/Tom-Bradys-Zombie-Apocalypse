@@ -10,8 +10,8 @@ body {
     width: 90%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #FFFFFF;
-}
+    background-color: #002244;
+} 
 .center {
   display: flex;
   justify-content: center;
@@ -20,7 +20,7 @@ body {
 header {
     width: 100%;
     height: 8%;
-    background-color: #5D5E5D;
+    background-color: #002244;
     border-bottom: 1px solid #353635;
 }
 .logo {
@@ -112,8 +112,8 @@ header {
 .cards {
     width: 100%;
     height: auto;
-    max-width: 400px;
-    max-height: 200px;
+    max-width: 642px;
+    max-height: 1795px;
     opacity: 0.8;
 }
 .intro .column p {
