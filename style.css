@@ -64,14 +64,25 @@ header {
 .thumbnail{
 	margin: .5em;
 	box-shadow: 3px 3px 10px black;
-	overflow: inherit;
+	height: 8em;
 }
 .row{
-  padding-left: 1em;
 	margin: 0 auto;
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
-h5 {
+.thumbnail {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+}
 
+.thumbnail:hover {
+	background-color: #d8e7ff;
+}
+
+.thumbnail:active {
+  background-color: #a6afbf;
+  box-shadow: -5px -5px 10px #666;
+  transform: translateY(4px);
 }
