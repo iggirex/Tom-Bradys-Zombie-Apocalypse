@@ -1,9 +1,12 @@
 let territories = neighborHoods;
 
+let selectedTerritory = {};
+
 let user = {
 	territories: [],
 	troopCount: 0,
-	points: 0
+	points: 0,
+	selectedHero: {}
 };
 
 let zombies = {
@@ -96,12 +99,7 @@ function setBoard(territories) {
 			territory.coordinates[3].reverse()
 		], {color: color}).addTo(map)
 
-
-		polygon.bindPopup(territory.name);
-		// placeMarkers(territory);
-
-
-		polygon.bindPopup(territory.name);
+		polygon.on( 'click', selectedTerritory = territory);
 		placeMarkers(territory, color);
 
 	}
@@ -162,7 +160,7 @@ function playerTurn(player) {
 		newTroops += 1;
 	}
 
-	playerSpendsCards(player)
+	spendPoints(player)
 
 	// Player place markers
 
@@ -209,15 +207,7 @@ function drawCard(player) {
 		player.points += 1;
 	}
 }
-//
-// function spendCards(player) {
-// 	if(player.points < 2) {
-// 		return
-// 	}
-// 	clearInstructions();
-//
-// }
-// // TODO clearInstructions()
+
 // function battle() {
 //
 // }
@@ -226,6 +216,7 @@ function drawCard(player) {
 $(document).ready(function(){
     // Show the Modal on load
     $("#myModal").modal("show");
+		$("#userDie").attr("src","images/zombie_killer.jpg");
 
     // Hide the Modal
     $("#myBtn").click(function(){
@@ -237,25 +228,33 @@ $( "#hero" ).click(function() {
 		$('.modal').modal('hide');
 		user.selectedHero.name = 'Russell Okung'
 		user.selectedHero.imageURL = 'images/okung.png'
+		$("#userDie").attr("src", user.selectedHero.imageURL);
+
 });
 $( "#hero1" ).click(function() {
 		$('.modal').modal('hide');
 		user.selectedHero.name = 'Peyton Manning'
 		user.selectedHero.imageURL = 'images/manning.png'
+		$("#userDie").attr("src", user.selectedHero.imageURL);
+
 });
 $( "#hero2" ).click(function() {
 		$('.modal').modal('hide');
 		user.selectedHero.name = 'CJ Anderson'
 		user.selectedHero.imageURL = 'images/anderson.png'
+		$("#userDie").attr("src", user.selectedHero.imageURL);
+
 });
 $( "#hero3" ).click(function() {
 		$('.modal').modal('hide');
 		user.selectedHero.name = 'Demaryius Thomas'
 		user.selectedHero.imageURL = 'images/thomas.png'
+		$("#userDie").attr("src", user.selectedHero.imageURL);
+
 });
 $( "#hero4" ).click(function() {
 		$('.modal').modal('hide');
 		user.selectedHero.name = 'John Elway'
 		user.selectedHero.imageURL = 'images/elway.png'
-
+		$("#userDie").attr("src", user.selectedHero.imageURL);
 });
