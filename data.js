@@ -426,7 +426,7 @@ var	neighborHoods =  [
 				[-105.003221, 39.678983]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Ruby", "Athmar Park", "Washington Park", "Triangle Land", ]
 		},
 	{
 			name: 'Athmar Park',
