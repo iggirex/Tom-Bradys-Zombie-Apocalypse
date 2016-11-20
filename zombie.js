@@ -17,6 +17,6 @@ function rollDice() {
     $("#winner").attr("src","images/zombie.gif");
 
   }else{
-    $("#winner").attr("src","images/zombie_killer.jpg");
+    $("#winner").attr("src",user.selectedHero.imageURL);
   }
 }
