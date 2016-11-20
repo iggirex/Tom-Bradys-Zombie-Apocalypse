@@ -25,7 +25,8 @@ header {
     display: flex;
     flex-direction: column;
     align-content: center;
-		margin-top: 5%;
+		margin-top: 10%;
+
 }
 .center-block {
     display: block;
