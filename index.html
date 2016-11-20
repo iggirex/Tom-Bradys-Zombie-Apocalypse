@@ -22,6 +22,13 @@
     <div class="container-fluid">
         <div class="row">
             <div class="controls col-xs-3">
+              <label for="dicCount" style="color:white">How Many Die?</label>
+                <select id="dieCount" class="" name="dicCount">
+                  <option value="0">select a number</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                </select>
                     <div id="visual">
                         <div class="dice">
                             <img id="zombieDie" src="images/zombie.gif" />
@@ -38,23 +45,31 @@
                         <img id="winner" src="images/letsplay.png" />
                         <h2 id='status'></h2>
                     </div>
+                <div id="control">
+                    <button id="roll" type="button" name="button" onclick="rollDice()"></button>
                 </div>
-                <div class="col-xd-9">
-                    <head>
-                      <div class="center">
+                <div id="message">
+                    <img id="winner" src="images/letsplay.png" />
+                    <h2 id='status'></h2>
+                </div>
+            </div>
+            <div class="col-xd-9">
+
+                <head>
+                    <div class="center">
                         <img class="center-block" id="brand" alt="Brand" src="images/MileHighApocalypse.png">
-                          </div>
-                    </head>
-                    <div class="game">
-                        <main>
-                            <div class="container">
-                                <div class="row">
-                                    <div id="map" class="col-xs-9">
-                                    </div>
+                    </div>
+                </head>
+                <div class="game">
+                    <main>
+                        <div class="container">
+                            <div class="row">
+                                <div id="map" class="col-xs-9">
                                 </div>
                             </div>
-                        </main>
-                  </div>
+                        </div>
+                    </main>
+                </div>
             </div>
         </div>
 
@@ -67,47 +82,47 @@
 
         <!-- Modal content-->
         <div class="modal-content">
-          <div class="modal-header">
-            <h1 class="modal-title text-center">Choose a hero!</h1>
-          </div>
-          <div class="container-fluid">
-            <div class="row">
-                <div class="gallery">
-                  <div id = "hero" class="thumbnail col-xs-2 btn-lg text-center">
-                    <a href="#"><img src="images/okung.png" alt=""  class="cards"/></a>
-                    <h5>Russell Okung</h5>
-                  </div>
-                  <div id = "hero1" class="thumbnail col-xs-2 btn-lg text-center">
-                    <a href="#"><img src="images/manning.png" alt="" class="cards"/></a>
-                    <h5>Peyton Manning</h5>
-                  </div>
-                  <div id = "hero2" class="thumbnail col-xs-2 btn-lg text-center">
-                    <a href="#"><img src="images/anderson.png" alt="" class="cards"/></a>
-                    <h5>CJ Anderson</h5>
-                  </div>
-                  <div id = "hero3" class="thumbnail col-xs-2 btn-lg text-center">
-                    <a href="#"><img src="images/thomas.png" alt="" class="cards"/></a>
-                    <h5>Demaryius Thomas</h5>
-                  </div>
-                	<div id = "hero4" class="thumbnail col-xs-2 btn-lg text-center">
-                  	<a href="#"><img src="images/elway.png" alt="" class="cards"/></a>
-                    <h5>John Elway</h5>
-                  </div>
+            <div class="modal-header">
+                <h1 class="modal-title text-center">Choose a hero!</h1>
+            </div>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="gallery">
+                        <div id="hero" class="thumbnail col-xs-2 btn-lg text-center">
+                            <a href="#"><img src="images/okung.png" alt="" class="cards" /></a>
+                            <h5>Russell Okung</h5>
+                        </div>
+                        <div id="hero1" class="thumbnail col-xs-2 btn-lg text-center">
+                            <a href="#"><img src="images/manning.png" alt="" class="cards" /></a>
+                            <h5>Peyton Manning</h5>
+                        </div>
+                        <div id="hero2" class="thumbnail col-xs-2 btn-lg text-center">
+                            <a href="#"><img src="images/anderson.png" alt="" class="cards" /></a>
+                            <h5>CJ Anderson</h5>
+                        </div>
+                        <div id="hero3" class="thumbnail col-xs-2 btn-lg text-center">
+                            <a href="#"><img src="images/thomas.png" alt="" class="cards" /></a>
+                            <h5>Demaryius Thomas</h5>
+                        </div>
+                        <div id="hero4" class="thumbnail col-xs-2 btn-lg text-center">
+                            <a href="#"><img src="images/elway.png" alt="" class="cards" /></a>
+                            <h5>John Elway</h5>
+                        </div>
+                    </div>
                 </div>
-          	  </div>
-        	 </div>
-      	</div>
+            </div>
+        </div>
 
-    	</div>
-		</div>
+    </div>
+</div>
 
-		<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="./map.js" charset="utf-8"></script>
-		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
-		<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-		<script src="zombie.js" charset="utf-8"></script>
-		<script src="game.js" charset="utf-8"></script>
-	</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="./map.js" charset="utf-8"></script>
+<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="zombie.js" charset="utf-8"></script>
+<script src="game.js" charset="utf-8"></script>
+</body>
 
 </html>
