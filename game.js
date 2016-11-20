@@ -131,31 +131,45 @@ function SelectTerritory() {
 	controlDiv.empty();
 	messageDiv.html("<h3 class='text-primary'>Select one of your territories</h3>")
 
-	var counter = 0;
-
+var x = 0;
+var color;
 		$("path").on("click", function(){
-			if(counter == 0){
-				userAttackFrom = selectedTerritory;
-				console.log("attacking From:");
-				console.log(userAttackFrom);
-				if (userAttackFrom.owner = "user"){
-					// selectedTerritory = {};
-					console.log("picked user owned territory");
-					counter++;
+			if (color == undefined) {
+				console.log($("path"))
+				color = $(this).attr('stroke');
+			}
+			// else if (color == $(this).attr('stroke')) {
+			//   messageDiv.html('<h3 class="text-danger"> Please choose two different colors</h3>');
+			// 	color = undefined;
+			// }
+			else {
+				console.log("Start rolling!")
+				let uDie1 = Math.floor(Math.random() * 6) + 1
+			  let uDie2 = Math.floor(Math.random() * 6) + 1
+				messageDiv.html('<h3 class="text-danger"> Player got' + uDie1 +'Zombie got' + uDie2 + '</h3>');
+				if( uDie1 < uDie2) {
+					// color = "blue"
+					console.log(this)
+					console.log("player won")
+
+					$(this).attr("fill", "red")
+					// $(this) = undefined;
+
+				} else if ( uDie2 < uDie1) {
+					console.log(this)
+					// $("this").attr("fill", "blue")
+					// $(this) = undefined;
+					console.log("zombies won")
+					$(this).attr("fill", "blue")
+
+					// $("path[x]").attr("fill", "blue")
+					// x++;
+
+
 				}
 			}
 
-				$("path").on("click", function() {
-						if(counter == 1){
-					var userAttackTo = selectedTerritory;
-					// console.log("attackFrom:", userAttackFrom, "attackTo", userAttackTo);
-					console.log("attacking to");
-					console.log(userAttackTo);
-					counter++;
-				}
-			})
 		})
-	console.log("out of conditional")
 
 }
 
