@@ -72,9 +72,9 @@ function startPlayersTurn(player) {
 
 	// populate controlls
 	if (user.points < 10) {
-		var message = "Do you want to buy more troops? You can get " + pointsToTroopConversion[user.points] + " more troops!";
+		var message = "Do you want to buy more troops? You can get " + pointsToTroopConversion[user.points] + " more!";
 	} else {
-		var message = "Do you want to buy more troops? You can get 30 more troops!";
+		var message = "Do you want to buy more troops? You can get 30 more!";
 	}
 
 	let visualDiv = $('#visual');
@@ -103,25 +103,36 @@ function startPlayersTurn(player) {
 
 	visualDiv.html("<img style='max-height: 200px;' src='" + user.selectedHero.imageURL + " ' />");
 
-	messageDiv.html('<p class="text-primary" >' + message + '</p>');
+	messageDiv.html('<h3 class="text-primary" >' + message + '</h3>');
 
-}
+};
 
 function placeTroops(numberOfTroops) {
+	user.troopCount += numberOfTroops;
+
+	for(var i = 0; i < numberOfTroops; i++) {
+		var territory = user.territories[Math.floor(Math.random() * user.territories.length)]
+		territory.troops += 1;
+		placeMarkers(territory, 'blue');
+	}
+		battle();
+};
+
+function battle() {
+	SelectTerritory();
+}
+
+function SelectTerritory() {
 	let visualDiv = $('#visual');
 	let controlDiv = $('#control');
 	let messageDiv = $('#message');
 
-	visualDiv.html('');
-	controlDiv.html('');
-	messageDiv.html('');
+	visualDiv.html('<img style="max-height: 200px;" src="' + user.selectedHero.imageURL + '">');
+	controlDiv.empty();
+	messageDiv.html("<h3 class='text-primary'>Select one of your territories</h3>")
 
-	for (var i = 0; i < numberOfTroops; i++) {
-		controlDiv.append($('<a class="btn btn-primary" > troop </a>' ));
-	}
 
-};
-
+}
 
 function playGame() {
 
@@ -252,10 +263,6 @@ function drawCard(player) {
 		player.points += 1;
 	}
 }
-
-// function battle() {
-//
-// }
 
 
 $(document).ready(function(){
