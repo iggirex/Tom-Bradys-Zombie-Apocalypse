@@ -38,6 +38,7 @@ header {
 }
 #status {
     color: white;
+		text-align: center;
 }
 #control {
     display: flex;
