@@ -4,6 +4,7 @@ body {
     font-family: Cambria, "Hoefler Text", "Liberation Serif", Times, "Times New Roman", serif;
     background-color: #FFFFFF;
     margin: 0;
+    height: 100%;
 }
 /* Container */
 .container {
@@ -11,7 +12,7 @@ body {
     margin-left: auto;
     margin-right: auto;
     background-color: #002244;
-} 
+}
 .center {
   display: flex;
   justify-content: center;
@@ -152,16 +153,8 @@ header {
     color: #FFFFFF;
     cursor: pointer;
 }
-.copyright {
-    text-align: center;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    background-color: #717070;
-    color: #FFFFFF;
-    text-transform: uppercase;
-    font-weight: lighter;
-    letter-spacing: 2px;
-    border-top-width: 2px;
+.black {
+  background-color: black;
 }
 footer {
     background-color: #B3B3B3;
@@ -182,6 +175,18 @@ footer {
     text-align: left;
     padding-left: 20px;
     padding-right: 20px;
+}
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    background-color: #717070;
+    color: #FFFFFF;
+    text-transform: uppercase;
+    font-weight: lighter;
+    letter-spacing: 2px;
+    border-top-width: 2px;
+    width: 100%;
 }
 /* Mobile */
 @media (max-width: 320px) {
