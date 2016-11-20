@@ -382,7 +382,7 @@ var	neighborHoods =  [
 				[-104.940547, 39.711533]
 			],
 			troops: 1,
-			attackableTerritories: "Lowry Air Force Base", "Montclair", "Hale", "Cherry Creek", "Glendale"
+			attackableTerritories: ["Lowry Air Force Base", "Montclair", "Hale", "Cherry Creek", "Glendale"]
 		},
 	{
 			name: 'Cherry Creek',
