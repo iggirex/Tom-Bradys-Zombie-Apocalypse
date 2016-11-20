@@ -1,73 +1,82 @@
 body {
-	height: 100%;
-	background: #23252B;
+    height: 100%;
+    background: #23252B;
 }
 header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 #brand {
-	max-height: 100px;
+    max-height: 100px;
 }
 #map {
-	height: 80vh;
+    height: 80vh;
 }
-
+.center {
+    display: flex;
+    justify-content: center;
+}
 .controls {
-	background: rgba(14, 14, 14, .5);
-	height: 95vh;
-	max-width: 280px;
-
+    background: rgba(14, 14, 14, .5);
+    height: 95vh;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+		margin-top: 5%;
 }
 .center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
- }
-
-.diceRoll {
-  display: flex;
-  justify-content: center;
 }
-#status{
-  color: white;
+#visual {
+    display: flex;
+    justify-content: center;
+}
+#status {
+    color: white;
+}
+#control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
 .dice img {
-  border: 2px black solid;
-  height: 100px;
-  width: 100px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48;
+    border: 2px black solid;
+    height: 100px;
+    width: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48;
 }
-.dice2 img{
-  border: 2px black solid;
-  height: 100px;
-  width: 100px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48;
+.dice2 img {
+    border: 2px black solid;
+    height: 100px;
+    width: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48;
 }
-.rollDiv {
-  display: flex;
-  justify-content: center;
+.message {
+    display: flex;
+    justify-content: center;
 }
-#roll{
-	height: 100px;
-	width: 200px;
-	background-image:url(images/rollthedice.jpg);
-	background-size:cover;
+#roll {
+    height: 100px;
+    width: 200px;
+    background-image: url(images/rollthedice.jpg);
+    background-size: cover;
 }
-
-#winner{
-	height: 100px;
-	width: 100px;
-	margin-left:30%;
-	margin-top: 10%;
+#winner {
+    height: 100px;
+    width: 100px;
+    margin-left: 30%;
+    margin-top: 10%;
 }
