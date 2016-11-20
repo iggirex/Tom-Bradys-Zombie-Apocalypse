@@ -107,7 +107,7 @@ var	neighborHoods =  [
 				[-104.959189, 39.725726]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Hale", "Cherry Creek", "Cheeseman", "City Park"]
 		},
 	{
 			name: 'Parkhill',
@@ -184,7 +184,7 @@ var	neighborHoods =  [
 				[-104.98635, 39.74027]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["LoDo", "Auraria", "Golden Triangle", "Cap Hill", "Union Station"]
 		},
 	{
 			name: 'Auraria',
@@ -283,7 +283,7 @@ var	neighborHoods =  [
 				[-104.884841, 39.740316]
 			],
 			troops: 2,
-			attackableTerritories: []
+			attackableTerritories: ["Montclair", "Hilltop", "Windsor", "Delmar"]
 		},
 	{
 			name: 'Delmar',
@@ -294,7 +294,7 @@ var	neighborHoods =  [
 				[-104.847290, 39.711270]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Lowry Air Force Base", "BooBoo Caca", "Lynn Knoll", "Jewell Heights"]
 		},
 	{
 			name: 'Jewell Heights',
@@ -305,7 +305,7 @@ var	neighborHoods =  [
 				[-104.825146, 39.740316]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Delmar", "Lynn Knoll"]
 		},
 	{
 			name: 'Lynn Knoll',
@@ -316,7 +316,7 @@ var	neighborHoods =  [
 				[-104.847290, 39.725662]
 			],
 			troops: 2,
-			attackableTerritories: []
+			attackableTerritories: ["Delmar", "Jewell Heights", "Aurora Hills"]
 		},
 	{
 			name: 'Aurora Hills',
@@ -327,7 +327,7 @@ var	neighborHoods =  [
 				[-104.847079, 39.696812]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Lynn Knoll", "BooBoo Caca", "Utah Park"]
 		},
 	{
 			name: 'Utah Park',
@@ -338,7 +338,7 @@ var	neighborHoods =  [
 				[-104.846907, 39.696713]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Aurora Hills", "Dayton Triangle"]
 		},
 	{
 			name: 'Dayton Triangle',
@@ -349,7 +349,7 @@ var	neighborHoods =  [
 				[-104.903553, 39.697498]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Utah Park", "BooBoo Caca", "Windsor", "Glendale"]
 		},
 	{
 			name: 'Windsor',
@@ -360,7 +360,7 @@ var	neighborHoods =  [
 				[-104.903209, 39.711332]
 			],
 			troops: 2,
-			attackableTerritories: []
+			attackableTerritories: ["Dayton Triangle", "BooBoo Caca", "Lowry Air Force Base", "Glendale"]
 		},
 	{
 			name: 'Glendale',
@@ -371,7 +371,7 @@ var	neighborHoods =  [
 				[-104.940687, 39.711698]
 			],
 			troops: 3,
-			attackableTerritories: []
+			attackableTerritories: ["Windsor", "Hilltop", "Belcaro"]
 		},
 	{
 			name: 'Hilltop',
@@ -382,7 +382,7 @@ var	neighborHoods =  [
 				[-104.940547, 39.711533]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: "Lowry Air Force Base", "Montclair", "Hale", "Cherry Creek", "Glendale"
 		},
 	{
 			name: 'Cherry Creek',
@@ -481,7 +481,7 @@ var	neighborHoods =  [
 				[-104.925345, 39.667858]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["University"]
 		},
 	{
 			name: 'Valverde',
@@ -492,7 +492,7 @@ var	neighborHoods =  [
 				[-105.01333, 39.72562]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Sun Valley", "Barnum Park", "Athmar Park", "Baker"]
 		},
 	{
 			name: 'Barnum Park',
@@ -591,7 +591,7 @@ var	neighborHoods =  [
 				[-104.86578, 39.69697]
 			],
 			troops: 3,
-			attackableTerritories: []
+			attackableTerritories: ["Aurora Hills", "Utah Park", "Dayton Triangle", "Windsor", "Delmar"]
 		},
 	{
 			name: 'Bear Valley',
