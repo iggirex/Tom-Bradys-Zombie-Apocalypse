@@ -49,8 +49,8 @@ header {
 }
 .dice img {
     border: 2px black solid;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     color: white;
     display: flex;
     justify-content: center;
@@ -59,8 +59,8 @@ header {
 }
 .dice2 img {
     border: 2px black solid;
-    height: 100px;
-    width: 100px;
+    height: 70px;
+    width: 70px;
     color: white;
     display: flex;
     justify-content: center;
