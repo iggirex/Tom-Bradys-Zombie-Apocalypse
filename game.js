@@ -257,4 +257,5 @@ $( "#hero4" ).click(function() {
 		$('.modal').modal('hide');
 		user.selectedHero.name = 'John Elway'
 		user.selectedHero.imageURL = 'images/elway.png'
+
 });

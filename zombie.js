@@ -8,6 +8,8 @@ function rollDice() {
   let diceTotal = zDie + uDie
   $("#zombieDie").attr("src","images/B"+zDie+".png");
   $("#userDie").attr("src","images/O"+uDie+".png");
+  $("#userDie").attr("src", user.selectedHero.imageURL);
+console.log(user.selectedHero.imageURL);
 
   if(zDie === uDie) {
     status.innerHTML += "Tie... Roll Again"
