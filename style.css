@@ -80,3 +80,17 @@ header {
     margin-left: 30%;
     margin-top: 10%;
 }
+.thumbnail{
+	margin: .5em;
+	box-shadow: 3px 3px 10px black;
+	overflow: inherit;
+}
+.row{
+  padding-left: 1em;
+	margin: 0 auto;
+	padding-top: 2em;
+	padding-bottom: 2em;
+}
+h5 {
+
+}
