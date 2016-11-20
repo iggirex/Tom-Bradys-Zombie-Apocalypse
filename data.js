@@ -19,7 +19,7 @@ var	neighborHoods =  [
 				[-104.97351, 39.78018]
 			],
 			troops: 2,
-			attackableTerritories: []
+			attackableTerritories: ["Union Station", "Whittier", "Clayton", "Elyria Swanson"]
 		},
 	{
 			name: 'Clayton',
@@ -30,7 +30,7 @@ var	neighborHoods =  [
 				[-104.95927, 39.78019]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Elyria Swanson", "Cole", "Skyland", "Northpark Hill"]
 		},
 	{
 			name: 'Whittier',
@@ -41,7 +41,7 @@ var	neighborHoods =  [
 				[-104.973529, 39.762185]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Union Station", "Cole", "Skyland", "City Park West"]
 		},
 	{
 			name: 'skyland',
@@ -52,7 +52,7 @@ var	neighborHoods =  [
 				[-104.940504, 39.761922]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Clayton", "City Park", "Parkhill", "Whittier"]
 		},
 	{
 			name: 'City Park',
@@ -63,7 +63,7 @@ var	neighborHoods =  [
 				[-104.940676, 39.754532]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Skyland", "City Park West", "Congress Park", "Parkhill"]
 		},
 	{
 			name: 'City Park West',
@@ -74,7 +74,7 @@ var	neighborHoods =  [
 				[-104.973463, 39.754548]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Cap Hill", "Union Station", "Whittier", "City Park", "Cheeseman"]
 		},
 	{
 			name: 'Cap Hill',
@@ -85,7 +85,7 @@ var	neighborHoods =  [
 				[-104.97345, 39.74756]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Down Town", "Cheeseman", "City Park West", "Union Station", ]
 		},
 	{
 			name: 'Cheeseman',
@@ -96,7 +96,7 @@ var	neighborHoods =  [
 				[-104.95903, 39.74014]
 			],
 			troops: 2,
-			attackableTerritories: []
+			attackableTerritories: ["Cherry Creek", "Speer", "Golden Triangle", "Cap Hill", "City Park West", "City Park", "Congress Park" ]
 		},
 	{
 			name: 'Congress Park',
@@ -118,7 +118,7 @@ var	neighborHoods =  [
 				[-104.912583, 39.761976]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["North Parkhill", "Skyland", "City Park", "Hale", "Montclair"]
 		},
 	{
 			name: 'North Parkhill',
@@ -129,7 +129,7 @@ var	neighborHoods =  [
 				[-104.912757, 39.783963]
 			],
 			troops: 3,
-			attackableTerritories: []
+			attackableTerritories: ["Elyria Swanson", "Clayton", "Parkhill"]
 		},
 	{
 			name: 'Elyria Swanson',
@@ -261,7 +261,7 @@ var	neighborHoods =  [
 				[-104.923446, 39.740283]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Parkhill", "Congress Park", "Hilltop", "Montclair"]
 		},
 	{
 			name: 'Montclair',
@@ -272,7 +272,7 @@ var	neighborHoods =  [
 				[-104.903705, 39.725629]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Hale", "Parkhill", "Hilltop", "Lowry Air Force Base"]
 		},
 	{
 			name: 'Lowry Air Force Base',
@@ -393,7 +393,7 @@ var	neighborHoods =  [
 				[-104.973695, 39.725794]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Belcaro", "Washington Park", "Speer", "Hilltop", "Congress Park", "Cheeseman"]
 		},
 	{
 			name: 'Speer',
@@ -404,7 +404,7 @@ var	neighborHoods =  [
 				[-104.987428, 39.725662]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Washington Park", "Sputnik", "Cheeseman", "Cherry Creek"]
 		},
 	{
 			name: 'Washington Park',
@@ -459,7 +459,7 @@ var	neighborHoods =  [
 				[-104.94048, 39.68291]
 			],
 			troops: 2,
-			attackableTerritories: []
+			attackableTerritories: ["Triangle Land", "University Hill"]
 		},
 	{
 			name: 'Belcaro',
@@ -470,7 +470,7 @@ var	neighborHoods =  [
 				[-104.940678, 39.711575]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Triangle Land", "Washington Park", "Cherry Creek", "Glendale"]
 		},
 	{
 			name: 'University Hill',
@@ -580,7 +580,7 @@ var	neighborHoods =  [
 				[-104.95928, 39.68476]
 			],
 			troops: 3,
-			attackableTerritories: []
+			attackableTerritories: ["Platte Park", "Washington Park", "Belcaro", "University"]
 		},
 	{
 			name: 'BooBoo Caca',

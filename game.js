@@ -99,6 +99,10 @@ function setBoard(territories) {
 			territory.coordinates[3].reverse()
 		], {color: color}).addTo(map)
 
+		//adding this extra to name attackable territories
+		polygon.bindPopup(territory.name);
+		// stuff
+
 		polygon.on( 'click', selectedTerritory = territory);
 		placeMarkers(territory, color);
 
