@@ -83,8 +83,8 @@ function startPlayersTurn(player) {
 
 	controlDiv.html('');
 
-	let noButton = $('<a>')
-	let yesButton = $('<a>')
+	let noButton = $('<a class="btn btn-danger">')
+	let yesButton = $('<a class="btn btn-success">')
 	noButton.text('No');
 	yesButton.text('Yes');
 
@@ -101,9 +101,9 @@ function startPlayersTurn(player) {
 	controlDiv.append(yesButton);
 	controlDiv.append(noButton);
 
-	visualDiv.html("<img src='" + user.selectedHero.imageURL + " ' />");
+	visualDiv.html("<img style='max-height: 200px;' src='" + user.selectedHero.imageURL + " ' />");
 
-	messageDiv.html(message);
+	messageDiv.html('<p class="text-primary" >' + message + '</p>');
 
 }
 
