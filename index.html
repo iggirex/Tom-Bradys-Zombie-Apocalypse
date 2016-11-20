@@ -6,10 +6,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-		<script src="./data.js" charset="utf-8"></script>
-		<link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
-		<script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js" charset="utf-8"></script>
-		<script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=Mhm1bP8qn0syLOxTU4Xy1t1MQlbCtuTi"></script>
+    <script src="./data.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.0.1/dist/leaflet.css" />
+    <script src="https://unpkg.com/leaflet@1.0.1/dist/leaflet.js" charset="utf-8"></script>
+    <script src="https://www.mapquestapi.com/sdk/leaflet/v2.2/mq-map.js?key=Mhm1bP8qn0syLOxTU4Xy1t1MQlbCtuTi"></script>
 
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
@@ -19,49 +19,62 @@
 </head>
 
 <body>
-	<div class="container-fluid">
-		<div class="row">
-			<div class="controls col-xs-3">
-				<div class="diceRoll">
-					<div class="dice" id="zombieDie">
-					</div>
-					<div class="dice2" id="userDie">
-					</div>
-					<br>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="controls col-xs-3">
+                    <div id="visual">
+                        <div class="dice">
+                            <img id="zombieDie" src="images/zombie.gif" />
+                        </div>
+                        <div class="dice2">
+                            <img id="userDie" src="images/zombie_killer.jpg" />
+                        </div>
+                        <br>
+                    </div>
+                    <div id="control">
+                        <button id="roll" type="button" name="button" onclick="rollDice()"></button>
+                    </div>
+                    <div id="message">
+                        <img id="winner" src="images/letsplay.png" />
+                        <h2 id='status'></h2>
+                    </div>
+                </div>
+                <div class="col-xd-9">
 
-				</div>
+                    <head>
+                        <img class="center-block" id="brand" alt="Brand" src="images/Zombie-logo2.png">
+                    </head>
+                    <div class="game">
+                        <main>
+                            <div class="container">
+                                <div class="row">
+                                    <div id="map" class="col-xs-9">
+                                    </div>
+                                </div>
+                            </div>
+                        </main>
+                    </div>
+            </div>
+        </div>
 
-				<div class="rollDiv">
-					<button type="button" name="button" onclick="rollDice()">ROLL THE DICE</button>
-				</div>
-				<div class="rollDiv">
-					<h2 id='status'></h2>
-				</div>
-			</div>
-			<div class="col-xd-9">
-				<head>
-			    <img class = "center-block" id="brand" alt="Brand" src="images/Zombie-logo2.png">
-			  </head>
-				<div class="game">
 
 
-			    <main>
-			    	<div class="container">
-			        <div class="row">
+        <footer>
+        </footer>
+        <script src="./map.js" charset="utf-8"></script>
+</body>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+</div>
+</div>
+</div>
+</main>
+</div>
+</div>
+</div>
 
-								<div id="map" class="col-xs-9">
-
-								</div>
-			        </div>
-			      </div>
-			    </main>
-			</div>
-		</div>
-	</div>
-
-  <!-- Modal -->
-    <div class="modal fade" id="myModal" role="dialog">
-      <div class="modal-dialog">
+<!-- Modal -->
+<div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
 
         <!-- Modal content-->
         <div class="modal-content">
@@ -96,21 +109,19 @@
          </div>
         </div>
 
-      </div>
     </div>
-  </div>
+</div>
+</div>
 
-    <footer>
+<footer>
 
-    </footer>
+</footer>
 
-		<script src="./map.js" charset="utf-8"></script>
+<script src="./map.js" charset="utf-8"></script>
 </body>
-<script
-  src="https://code.jquery.com/jquery-3.1.1.min.js"
-  integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-  crossorigin="anonymous"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js" integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8=" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 <script src="zombie.js" charset="utf-8"></script>
 <script src="game.js" charset="utf-8"></script>
+
 </html>
