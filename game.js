@@ -1,9 +1,12 @@
 let territories = neighborHoods;
 
+let selectedTerritory = {};
+
 let user = {
 	territories: [],
 	troopCount: 0,
-	points: 0
+	points: 0,
+	selectedHero: {}
 };
 
 let zombies = {
@@ -96,12 +99,7 @@ function setBoard(territories) {
 			territory.coordinates[3].reverse()
 		], {color: color}).addTo(map)
 
-
-		polygon.bindPopup(territory.name);
-		// placeMarkers(territory);
-
-
-		polygon.bindPopup(territory.name);
+		polygon.on( 'click', selectedTerritory = territory);
 		placeMarkers(territory, color);
 
 	}
@@ -209,15 +207,7 @@ function drawCard(player) {
 		player.points += 1;
 	}
 }
-//
-// function spendCards(player) {
-// 	if(player.points < 2) {
-// 		return
-// 	}
-// 	clearInstructions();
-//
-// }
-// // TODO clearInstructions()
+
 // function battle() {
 //
 // }
