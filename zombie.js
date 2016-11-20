@@ -6,8 +6,8 @@ function rollDice() {
   let zDie = Math.floor(Math.random() * 6) + 1
   let uDie = Math.floor(Math.random() * 6) + 1
   let diceTotal = zDie + uDie
-  $("#zombieDie").attr("src","images/b"+zDie+".png");
-  $("#userDie").attr("src","images/r"+uDie+".png");
+  $("#zombieDie").attr("src","images/B"+zDie+".png");
+  $("#userDie").attr("src","images/O"+uDie+".png");
 
   if(zDie === uDie) {
     status.innerHTML += "Tie... roll again"
