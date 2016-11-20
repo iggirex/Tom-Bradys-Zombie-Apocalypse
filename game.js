@@ -119,6 +119,7 @@ function placeTroops(numberOfTroops) {
 	for (var i = 0; i < numberOfTroops; i++) {
 		controlDiv.append($('<a class="btn btn-primary" > troop </a>' ));
 	}
+
 };
 
 
@@ -204,12 +205,22 @@ function placeMarkers(territory, color) {
 	long = long / territory.coordinates.length;
 	lat = lat / territory.coordinates.length;
 
-	let marker = L.marker([long, lat]).addTo(map);
+	if (color == 'red') {
+		let marker = L.marker([long, lat], {icon: zombieIcon}).addTo(map);
+	} else {
+		let marker = L.marker([long, lat], {icon: heroIcon}).addTo(map);
+	}
+
+
 
 	for(var i = 1; i < territory.troops; i++) {
 		let center = [long, lat];
 		let newPoint = [(long + territory.coordinates[i][0]) / 2, (lat + territory.coordinates[i][1]) / 2]
-		let marker = L.marker(newPoint).addTo(map);
+		if(color == 'red') {
+			let marker = L.marker(newPoint, {icon: zombieIcon}).addTo(map);
+		} else {
+			let marker =L.marker(newPoint,{icon: heroIcon}).addTo(map)
+		}
 	}
 }
 
