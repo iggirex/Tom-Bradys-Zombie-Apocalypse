@@ -1,0 +1,1 @@
+{"version":3,"sources":["meteor://💻app/server/main.js"],"names":["Meteor","startup"],"mappings":";;;;;;;;AAAA,SAASA,MAAT,QAAuB,eAAvB;;AAEAA,OAAOC,OAAP,CAAe,YAAM;AACnB;AACD,CAFD,+E","file":"/app.js","sourcesContent":["import { Meteor } from 'meteor/meteor';\n\nMeteor.startup(() => {\n  // code to run on server at startup\n});\n"]}
