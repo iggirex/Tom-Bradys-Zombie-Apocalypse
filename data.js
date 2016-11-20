@@ -8,7 +8,7 @@ var	neighborHoods =  [
 				[-104.98729, 39.74765]
 			],
 			troops: 3,
-			attackableTerritories: []
+			attackableTerritories: ["Sunnyside", "Elyria Swanson", "Cole", "Whittier", "City Park West", "Cap Hill", "Down Town", "LoDo", ]
 		},
 	{
 			name: 'Cole',
@@ -140,7 +140,7 @@ var	neighborHoods =  [
 				[-104.940361, 39.794567]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Chaffee Park", "Sunnyside", "Union Station", "Cole", "Clayton", "North Parkhill"]
 		},
 	{
 			name: 'Chaffee Park',
@@ -151,7 +151,7 @@ var	neighborHoods =  [
 				[-105.02537, 39.7846]
 			],
 			troops: 2,
-			attackableTerritories: []
+			attackableTerritories: ["Sunnyside", "Elyria Swanson"]
 		},
 	{
 			name: 'Sunnyside',
@@ -162,7 +162,7 @@ var	neighborHoods =  [
 				[-105.025399, 39.769327]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Hihhlands", "Chaffee Park", "Elyria Swanson", "Union Station"]
 		},
 	{
 			name: 'LoDo',
@@ -173,7 +173,7 @@ var	neighborHoods =  [
 				[-105.01128, 39.75583]
 			],
 			troops: 2,
-			attackableTerritories: []
+			attackableTerritories: ["Highlands", "Auraria", "Down Town", "Union Station"]
 		},
 	{
 			name: 'Down Town',
@@ -195,7 +195,7 @@ var	neighborHoods =  [
 				[-105.014493, 39.740543]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["LoDo", "Downtown", "Baker", "Broncos Stadium", "Highlands"]
 		},
 	{
 			name: 'Broncos Stadium',
@@ -206,7 +206,7 @@ var	neighborHoods =  [
 				[-105.025136, 39.751235]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Sun Valley", "Sloan's Lake", "Highlands", "Auraria"]
 		},
 	{
 			name: 'Highlands',
@@ -217,7 +217,7 @@ var	neighborHoods =  [
 				[-105.025135, 39.751568]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Broncos Stadium", "Auraria", "Sloan's Lake", "Sunnyside", "LoDo"]
 		},
 	{
 			name: 'Sun Valley',
@@ -228,7 +228,7 @@ var	neighborHoods =  [
 				[-105.013805, 39.740415]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Villa Park", "Valverde", "Baker", "Broncos Stadium"]
 		},
 	{
 			name: 'Baker',
@@ -239,7 +239,7 @@ var	neighborHoods =  [
 				[-104.998740, 39.740415]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Auraria", "Sun Valley", "Golden Triangle", "Valverde", "Sputnik", ]
 		},
 	{
 			name: 'Golden Triangle',
@@ -250,7 +250,7 @@ var	neighborHoods =  [
 				[-104.986381, 39.740283]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Baker", "Cheeseman", "Down Town", "Sputnik"]
 		},
 	{
 			name: 'Hale',
@@ -415,7 +415,7 @@ var	neighborHoods =  [
 				[-104.959275, 39.711179]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Speer", "Sputnik", "Platte Park", "Cherry Creek", "Belcaro", "Triangle Land"]
 		},
 	{
 			name: 'Platte Park',
@@ -437,7 +437,7 @@ var	neighborHoods =  [
 				[-105.025022, 39.696949]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Ruby Hill", "West Wood", "Valverde", "Platte Park"]
 		},
 	{
 			name: 'Ruby Hill',
@@ -448,7 +448,7 @@ var	neighborHoods =  [
 				[-105.025022, 39.696817]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["West Wood", "Harvey Park", "Athmar Park", "Platte Park"]
 		},
 	{
 			name: 'University',
@@ -503,7 +503,7 @@ var	neighborHoods =  [
 				[-105.053206, 39.725913]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["West Wood", "Valverde", "Villa Park"]
 		},
 	{
 		name: 'Villa Park',
@@ -514,7 +514,7 @@ var	neighborHoods =  [
 				[-105.053206, 39.726111]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Barnum Park", "Sun Valley", "Sloan\'s Lake"]
 		},
 	{
 			name: 'Sloan\'s Lake',
@@ -525,7 +525,7 @@ var	neighborHoods =  [
 				[-105.025568, 39.759868]
 			],
 			troops: 2,
-			attackableTerritories: []
+			attackableTerritories: ["Villa Park", "Broncos Stadium", "Highlands"]
 		},
 	{
 		name: 'West Wood',
@@ -536,10 +536,10 @@ var	neighborHoods =  [
 				[-105.053168, 39.711260]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Harvey Park", "Ruby Hill", "Athmar Park", "Barnum Park" ]
 		},
 	{
-			name: 'Harvey\'s Park',
+			name: 'Harvey Park',
 			coordinates: [
 				[-105.025187, 39.682532],
 				[-105.025016, 39.667998],
@@ -547,7 +547,7 @@ var	neighborHoods =  [
 				[-105.053168, 39.682400]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["West Wood", "Fort Logan", "Ruby Hill"]
 		},
 	{
 			name: 'Fort Logan',
@@ -558,7 +558,7 @@ var	neighborHoods =  [
 				[-105.025154, 39.667765]
 			],
 			troops: 3,
-			attackableTerritories: []
+			attackableTerritories: ["Bear Valley", "Harvey Park"]
 		},
 	{
 			name: 'Sputnik',
@@ -569,7 +569,7 @@ var	neighborHoods =  [
 				[-104.9988, 39.71134]
 			],
 			troops: 3,
-			attackableTerritories: []
+			attackableTerritories: ["Baker", "Washington Park", "Speer", "Golden Triangle", "Speer", ]
 		},
 	{
 			name: 'Triangle Land',
@@ -602,6 +602,6 @@ var	neighborHoods =  [
 				[-105.053077, 39.667765]
 			],
 			troops: 1,
-			attackableTerritories: []
+			attackableTerritories: ["Fort Logan"]
 		}
 	]
