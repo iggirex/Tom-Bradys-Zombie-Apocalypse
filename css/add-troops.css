@@ -1,0 +1,10 @@
+#new-troops {
+	max-width: 100%;
+	display: flex;
+	flex-direction: row;
+}
+
+.new-troop {
+	max-height: 80px;
+	margin: 10px;
+}
