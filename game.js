@@ -188,6 +188,8 @@ function setBoard(territories) {
 		], {color: color}).addTo(map)
 
 		polygon.on( 'click', (x) => {selectedTerritory = territory});
+
+
 		placeMarkers(territory, color);
 
 	}
