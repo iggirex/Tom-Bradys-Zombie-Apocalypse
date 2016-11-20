@@ -1,77 +1,108 @@
 body {
-	height: 100%;
-	background: #23252B;
+    height: 100%;
+    background: #23252B;
 }
 header {
-	display: flex;
-	flex-direction: row;
-	align-items: center;
-	justify-content: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
 }
 #brand {
-	max-height: 100px;
+    max-height: 100px;
 }
 #map {
-	height: 80vh;
+    height: 80vh;
 }
 .center {
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 .controls {
-	background: rgba(14, 14, 14, .5);
-	height: 95vh;
-	max-width: 280px;
-
+    background: rgba(14, 14, 14, .5);
+    height: 95vh;
+    max-width: 280px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+		margin-top: 5%;
 }
 .center-block {
     display: block;
     margin-left: auto;
     margin-right: auto;
- }
-
-.diceRoll {
-  display: flex;
-  justify-content: center;
 }
-#status{
-  color: white;
+#visual {
+    display: flex;
+    justify-content: center;
 }
-.dice {
-  border: 2px black solid;
-  height: 100px;
-  width: 100px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48;
+#status {
+    color: white;
+		text-align: center;
 }
-.dice2 {
-  border: 2px black solid;
-  height: 100px;
-  width: 100px;
-  color: white;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  font-size: 48;
+#control {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
 }
-.rollDiv {
-  display: flex;
-  justify-content: center;
+.dice img {
+    border: 2px black solid;
+    height: 100px;
+    width: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48;
+}
+.dice2 img {
+    border: 2px black solid;
+    height: 100px;
+    width: 100px;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 48;
+}
+.message {
+    display: flex;
+    justify-content: center;
+}
+#roll {
+    height: 100px;
+    width: 200px;
+    background-image: url(images/rollthedice.jpg);
+    background-size: cover;
+}
+#winner {
+    height: 100px;
+    width: 100px;
+    margin-left: 30%;
+    margin-top: 10%;
 }
 .thumbnail{
 	margin: .5em;
 	box-shadow: 3px 3px 10px black;
-	overflow: inherit;
+	height: 8em;
 }
 .row{
-  padding-left: 1em;
 	margin: 0 auto;
 	padding-top: 2em;
 	padding-bottom: 2em;
 }
-h5 {
+.thumbnail {
+  text-align: center;
+  cursor: pointer;
+  border-radius: 15px;
+}
 
+.thumbnail:hover {
+	background-color: #d8e7ff;
+}
+
+.thumbnail:active {
+  background-color: #a6afbf;
+  box-shadow: -5px -5px 10px #666;
+  transform: translateY(4px);
 }
