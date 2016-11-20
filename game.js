@@ -232,3 +232,29 @@ $(document).ready(function(){
         $("#myModal").modal("hide");
     });
 });
+
+$( "#hero" ).click(function() {
+		$('.modal').modal('hide');
+		user.selectedHero.name = 'Russell Okung'
+		user.selectedHero.imageURL = 'images/okung.png'
+});
+$( "#hero1" ).click(function() {
+		$('.modal').modal('hide');
+		user.selectedHero.name = 'Peyton Manning'
+		user.selectedHero.imageURL = 'images/manning.png'
+});
+$( "#hero2" ).click(function() {
+		$('.modal').modal('hide');
+		user.selectedHero.name = 'CJ Anderson'
+		user.selectedHero.imageURL = 'images/anderson.png'
+});
+$( "#hero3" ).click(function() {
+		$('.modal').modal('hide');
+		user.selectedHero.name = 'Demaryius Thomas'
+		user.selectedHero.imageURL = 'images/thomas.png'
+});
+$( "#hero4" ).click(function() {
+		$('.modal').modal('hide');
+		user.selectedHero.name = 'John Elway'
+		user.selectedHero.imageURL = 'images/elway.png'
+});
