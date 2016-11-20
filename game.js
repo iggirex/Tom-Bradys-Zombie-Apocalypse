@@ -98,6 +98,10 @@ function setBoard(territories) {
 
 
 		polygon.bindPopup(territory.name);
+		// placeMarkers(territory);
+
+
+		polygon.bindPopup(territory.name);
 		placeMarkers(territory, color);
 
 	}
@@ -184,7 +188,7 @@ function spendPoints(player) {
 		let message = "Do you want to buy more troops? You can get 30 more troops!";
 	}
 
-	
+
 
 
 }
