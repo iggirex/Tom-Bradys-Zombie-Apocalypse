@@ -15,11 +15,15 @@ function rollDice() {
   if(zDie === uDie) {
     status.innerHTML += "Tie... Roll Again"
     $("#winner").attr("src","images/tie.png");
-
+    $("#winner").effect( "pulsate" );
   } else if (zDie > uDie) {
     $("#winner").attr("src","images/zombie.gif");
+    $("#winner").effect( "puff" );
+
 
   }else{
     $("#winner").attr("src",user.selectedHero.imageURL);
+    $("#winner").effect( "puff" );
+
   }
 }
