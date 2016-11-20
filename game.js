@@ -131,6 +131,31 @@ function SelectTerritory() {
 	controlDiv.empty();
 	messageDiv.html("<h3 class='text-primary'>Select one of your territories</h3>")
 
+	var counter = 0;
+
+		$("path").on("click", function(){
+			if(counter == 0){
+				userAttackFrom = selectedTerritory;
+				console.log("attacking From:");
+				console.log(userAttackFrom);
+				if (userAttackFrom.owner = "user"){
+					// selectedTerritory = {};
+					console.log("picked user owned territory");
+					counter++;
+				}
+			}
+
+				$("path").on("click", function() {
+						if(counter == 1){
+					var userAttackTo = selectedTerritory;
+					// console.log("attackFrom:", userAttackFrom, "attackTo", userAttackTo);
+					console.log("attacking to");
+					console.log(userAttackTo);
+					counter++;
+				}
+			})
+		})
+	console.log("out of conditional")
 
 }
 
