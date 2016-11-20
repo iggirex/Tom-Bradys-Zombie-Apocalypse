@@ -6,6 +6,14 @@ map = L.map('map', {
 	zoom: 12
 })
 
+//making boundaries
+// map.fitBounds([
+// 		[39.802437, -104.825213],
+//     [39.653516, -105.086482]
+//
+// ]);
+map.options.minZoom = 11.5;
+//--->
 
 
 var zombieIcon = L.icon({
