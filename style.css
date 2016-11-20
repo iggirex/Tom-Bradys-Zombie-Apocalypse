@@ -1,6 +1,6 @@
 body {
     height: 100%;
-    background: #23252B;
+    background:black;
 }
 header {
     display: flex;
@@ -35,6 +35,7 @@ header {
 #visual {
     display: flex;
     justify-content: center;
+		margin-bottom: 5%;
 }
 #status {
     color: white;
