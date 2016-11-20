@@ -8,6 +8,9 @@ function rollDice() {
   let diceTotal = zDie + uDie
   $("#zombieDie").attr("src","images/B"+zDie+".png");
   $("#userDie").attr("src","images/O"+uDie+".png");
+  $("#zombieDie").effect( "bounce" );
+  $("#userDie").effect( "bounce" );
+
 
   if(zDie === uDie) {
     status.innerHTML += "Tie... Roll Again"
@@ -17,6 +20,6 @@ function rollDice() {
     $("#winner").attr("src","images/zombie.gif");
 
   }else{
-    $("#winner").attr("src","images/zombie_killer.jpg");
+    $("#winner").attr("src",user.selectedHero.imageURL);
   }
 }
