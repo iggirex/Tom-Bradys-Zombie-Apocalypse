@@ -98,6 +98,10 @@ function setBoard(territories) {
 
 
 		polygon.bindPopup(territory.name);
+		// placeMarkers(territory);
+
+
+		polygon.bindPopup(territory.name);
 		placeMarkers(territory, color);
 
 	}

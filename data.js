@@ -7,18 +7,19 @@ var	neighborHoods =  [
 				[-104.98975, 39.78014],
 				[-104.98729, 39.74765]
 			],
-			troops: 3
+			troops: 3,
+			attackableTerritories: []
 		},
 	{
 			name: 'Cole',
 			coordinates: [
-
 				[-104.97341, 39.7622],
 				[-104.9599, 39.76208],
 				[-104.95927, 39.78021],
 				[-104.97351, 39.78018]
 			],
-			troops: 2
+			troops: 2,
+			attackableTerritories: []
 		},
 	{
 			name: 'Clayton',
@@ -28,7 +29,8 @@ var	neighborHoods =  [
 				[-104.94052, 39.7802],
 				[-104.95927, 39.78019]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Whittier',
@@ -38,7 +40,8 @@ var	neighborHoods =  [
 				[-104.973443, 39.754729],
 				[-104.973529, 39.762185]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'skyland',
@@ -48,7 +51,8 @@ var	neighborHoods =  [
 				[-104.940676, 39.754597],
 				[-104.940504, 39.761922]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'City Park',
@@ -58,7 +62,8 @@ var	neighborHoods =  [
 				[-104.940676, 39.740211],
 				[-104.940676, 39.754532]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'City Park West',
@@ -68,7 +73,8 @@ var	neighborHoods =  [
 				[-104.973377, 39.740228],
 				[-104.973463, 39.754548]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Cap Hill',
@@ -78,7 +84,8 @@ var	neighborHoods =  [
 				[-104.97348, 39.74016],
 				[-104.97345, 39.74756]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Cheeseman',
@@ -88,7 +95,8 @@ var	neighborHoods =  [
 				[-104.95919, 39.72556],
 				[-104.95903, 39.74014]
 			],
-			troops: 2
+			troops: 2,
+			attackableTerritories: []
 		},
 	{
 			name: 'Congress Park',
@@ -98,7 +106,8 @@ var	neighborHoods =  [
 				[-104.940992, 39.725660],
 				[-104.959189, 39.725726]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Parkhill',
@@ -108,7 +117,8 @@ var	neighborHoods =  [
 				[-104.912583, 39.740133],
 				[-104.912583, 39.761976]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'North Parkhill',
@@ -118,7 +128,8 @@ var	neighborHoods =  [
 				[-104.940481, 39.783617],
 				[-104.912757, 39.783963]
 			],
-			troops: 3
+			troops: 3,
+			attackableTerritories: []
 		},
 	{
 			name: 'Elyria Swanson',
@@ -128,7 +139,8 @@ var	neighborHoods =  [
 				[-104.988083, 39.791203],
 				[-104.940361, 39.794567]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Chaffee Park',
@@ -138,7 +150,8 @@ var	neighborHoods =  [
 				[-105.0252, 39.79396],
 				[-105.02537, 39.7846]
 			],
-			troops: 2
+			troops: 2,
+			attackableTerritories: []
 		},
 	{
 			name: 'Sunnyside',
@@ -148,7 +161,8 @@ var	neighborHoods =  [
 				[-104.989866, 39.769591],
 				[-105.025399, 39.769327]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'LoDo',
@@ -158,7 +172,8 @@ var	neighborHoods =  [
 				[-105.0034, 39.74542],
 				[-105.01128, 39.75583]
 			],
-			troops: 2
+			troops: 2,
+			attackableTerritories: []
 		},
 	{
 			name: 'Down Town',
@@ -168,7 +183,8 @@ var	neighborHoods =  [
 				[-104.9994, 39.74046],
 				[-104.98635, 39.74027]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Auraria',
@@ -178,7 +194,8 @@ var	neighborHoods =  [
 				[-105.017239, 39.750971],
 				[-105.014493, 39.740543]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Broncos Stadium',
@@ -188,7 +205,8 @@ var	neighborHoods =  [
 				[-105.025479, 39.740675],
 				[-105.025136, 39.751235]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Highlands',
@@ -198,7 +216,8 @@ var	neighborHoods =  [
 				[-105.025307, 39.769383],
 				[-105.025135, 39.751568]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Sun Valley',
@@ -208,7 +227,8 @@ var	neighborHoods =  [
 				[-105.01333, 39.72562],
 				[-105.013805, 39.740415]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Baker',
@@ -218,7 +238,8 @@ var	neighborHoods =  [
 				[-104.9988, 39.71133],
 				[-104.998740, 39.740415]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Golden Triangle',
@@ -228,7 +249,8 @@ var	neighborHoods =  [
 				[-104.98656, 39.72565],
 				[-104.986381, 39.740283]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Hale',
@@ -238,7 +260,8 @@ var	neighborHoods =  [
 				[-104.923446, 39.725629],
 				[-104.923446, 39.740283]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Montclair',
@@ -248,7 +271,8 @@ var	neighborHoods =  [
 				[-104.903533, 39.740283],
 				[-104.903705, 39.725629]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Lowry Air Force Base',
@@ -258,7 +282,8 @@ var	neighborHoods =  [
 				[-104.865958, 39.711138],
 				[-104.884841, 39.740316]
 			],
-			troops: 2
+			troops: 2,
+			attackableTerritories: []
 		},
 	{
 			name: 'Delmar',
@@ -268,7 +293,8 @@ var	neighborHoods =  [
 				[-104.847119, 39.740184],
 				[-104.847290, 39.711270]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Jewell Heights',
@@ -278,7 +304,8 @@ var	neighborHoods =  [
 				[-104.824803, 39.725794],
 				[-104.825146, 39.740316]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Lynn Knoll',
@@ -288,7 +315,8 @@ var	neighborHoods =  [
 				[-104.847119, 39.711402],
 				[-104.847290, 39.725662]
 			],
-			troops: 2
+			troops: 2,
+			attackableTerritories: []
 		},
 	{
 			name: 'Aurora Hills',
@@ -298,7 +326,8 @@ var	neighborHoods =  [
 				[-104.829054, 39.696944],
 				[-104.847079, 39.696812]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Utah Park',
@@ -308,7 +337,8 @@ var	neighborHoods =  [
 				[-104.847250, 39.674916],
 				[-104.846907, 39.696713]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Dayton Triangle',
@@ -318,7 +348,8 @@ var	neighborHoods =  [
 				[-104.903381, 39.675833],
 				[-104.903553, 39.697498]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Windsor',
@@ -328,7 +359,8 @@ var	neighborHoods =  [
 				[-104.903381, 39.697729],
 				[-104.903209, 39.711332]
 			],
-			troops: 2
+			troops: 2,
+			attackableTerritories: []
 		},
 	{
 			name: 'Glendale',
@@ -338,7 +370,8 @@ var	neighborHoods =  [
 				[-104.940687, 39.696775],
 				[-104.940687, 39.711698]
 			],
-			troops: 3
+			troops: 3,
+			attackableTerritories: []
 		},
 	{
 			name: 'Hilltop',
@@ -348,7 +381,8 @@ var	neighborHoods =  [
 				[-104.940547, 39.725662],
 				[-104.940547, 39.711533]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Cherry Creek',
@@ -358,7 +392,8 @@ var	neighborHoods =  [
 				[-104.973352, 39.711137],
 				[-104.973695, 39.725794]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Speer',
@@ -368,7 +403,8 @@ var	neighborHoods =  [
 				[-104.987600, 39.711269],
 				[-104.987428, 39.725662]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Washington Park',
@@ -378,7 +414,8 @@ var	neighborHoods =  [
 				[-104.959275, 39.684763],
 				[-104.959275, 39.711179]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Platte Park',
@@ -388,7 +425,8 @@ var	neighborHoods =  [
 				[-104.973695, 39.678719],
 				[-105.003221, 39.678983]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Athmar Park',
@@ -398,7 +436,8 @@ var	neighborHoods =  [
 				[-105.02532, 39.71123],
 				[-105.025022, 39.696949]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Ruby Hill',
@@ -408,7 +447,8 @@ var	neighborHoods =  [
 				[-105.025193, 39.678851],
 				[-105.025022, 39.696817]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'University',
@@ -418,7 +458,8 @@ var	neighborHoods =  [
 				[-104.940506, 39.653249],
 				[-104.94048, 39.68291]
 			],
-			troops: 2
+			troops: 2,
+			attackableTerritories: []
 		},
 	{
 			name: 'Belcaro',
@@ -428,7 +469,8 @@ var	neighborHoods =  [
 				[-104.940506, 39.682914],
 				[-104.940678, 39.711575]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'University Hill',
@@ -438,7 +480,8 @@ var	neighborHoods =  [
 				[-104.918307, 39.653189],
 				[-104.925345, 39.667858]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Valverde',
@@ -448,7 +491,8 @@ var	neighborHoods =  [
 				[-104.9988, 39.71133],
 				[-105.01333, 39.72562]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Barnum Park',
@@ -458,7 +502,8 @@ var	neighborHoods =  [
 				[-105.053034, 39.711520],
 				[-105.053206, 39.725913]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 		name: 'Villa Park',
@@ -468,7 +513,8 @@ var	neighborHoods =  [
 				[-105.053377, 39.740632],
 				[-105.053206, 39.726111]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Sloan\'s Lake',
@@ -478,7 +524,8 @@ var	neighborHoods =  [
 				[-105.053549, 39.761980],
 				[-105.025568, 39.759868]
 			],
-			troops: 2
+			troops: 2,
+			attackableTerritories: []
 		},
 	{
 		name: 'West Wood',
@@ -488,7 +535,8 @@ var	neighborHoods =  [
 				[-105.053168, 39.682466],
 				[-105.053168, 39.711260]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Harvey\'s Park',
@@ -498,7 +546,8 @@ var	neighborHoods =  [
 				[-105.053512, 39.668130],
 				[-105.053168, 39.682400]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		},
 	{
 			name: 'Fort Logan',
@@ -508,7 +557,8 @@ var	neighborHoods =  [
 				[-105.024982, 39.652171],
 				[-105.025154, 39.667765]
 			],
-			troops: 3
+			troops: 3,
+			attackableTerritories: []
 		},
 	{
 			name: 'Sputnik',
@@ -518,7 +568,8 @@ var	neighborHoods =  [
 				[-104.9876, 39.71128],
 				[-104.9988, 39.71134]
 			],
-			troops: 3
+			troops: 3,
+			attackableTerritories: []
 		},
 	{
 			name: 'Triangle Land',
@@ -528,7 +579,8 @@ var	neighborHoods =  [
 				[-104.94051, 39.68291],
 				[-104.95928, 39.68476]
 			],
-			troops: 3
+			troops: 3,
+			attackableTerritories: []
 		},
 	{
 			name: 'BooBoo Caca',
@@ -538,7 +590,8 @@ var	neighborHoods =  [
 				[-104.84709, 39.69671],
 				[-104.86578, 39.69697]
 			],
-			troops: 3
+			troops: 3,
+			attackableTerritories: []
 		},
 	{
 			name: 'Bear Valley',
@@ -548,6 +601,7 @@ var	neighborHoods =  [
 				[-105.081058, 39.667897],
 				[-105.053077, 39.667765]
 			],
-			troops: 1
+			troops: 1,
+			attackableTerritories: []
 		}
 	]
