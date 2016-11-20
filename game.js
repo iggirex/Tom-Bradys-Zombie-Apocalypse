@@ -1,9 +1,12 @@
 let territories = neighborHoods;
 
+let selectedTerritory = {};
+
 let user = {
 	territories: [],
 	troopCount: 0,
-	points: 0
+	points: 0,
+	selectedHero: {}
 };
 
 let zombies = {
@@ -96,12 +99,7 @@ function setBoard(territories) {
 			territory.coordinates[3].reverse()
 		], {color: color}).addTo(map)
 
-
-		polygon.bindPopup(territory.name);
-		// placeMarkers(territory);
-
-
-		polygon.bindPopup(territory.name);
+		polygon.on( 'click', selectedTerritory = territory);
 		placeMarkers(territory, color);
 
 	}
@@ -162,7 +160,7 @@ function playerTurn(player) {
 		newTroops += 1;
 	}
 
-	playerSpendsCards(player)
+	spendPoints(player)
 
 	// Player place markers
 
@@ -209,15 +207,7 @@ function drawCard(player) {
 		player.points += 1;
 	}
 }
-//
-// function spendCards(player) {
-// 	if(player.points < 2) {
-// 		return
-// 	}
-// 	clearInstructions();
-//
-// }
-// // TODO clearInstructions()
+
 // function battle() {
 //
 // }
@@ -231,4 +221,30 @@ $(document).ready(function(){
     $("#myBtn").click(function(){
         $("#myModal").modal("hide");
     });
+});
+
+$( "#hero" ).click(function() {
+		$('.modal').modal('hide');
+		user.selectedHero.name = 'Russell Okung'
+		user.selectedHero.imageURL = 'images/okung.png'
+});
+$( "#hero1" ).click(function() {
+		$('.modal').modal('hide');
+		user.selectedHero.name = 'Peyton Manning'
+		user.selectedHero.imageURL = 'images/manning.png'
+});
+$( "#hero2" ).click(function() {
+		$('.modal').modal('hide');
+		user.selectedHero.name = 'CJ Anderson'
+		user.selectedHero.imageURL = 'images/anderson.png'
+});
+$( "#hero3" ).click(function() {
+		$('.modal').modal('hide');
+		user.selectedHero.name = 'Demaryius Thomas'
+		user.selectedHero.imageURL = 'images/thomas.png'
+});
+$( "#hero4" ).click(function() {
+		$('.modal').modal('hide');
+		user.selectedHero.name = 'John Elway'
+		user.selectedHero.imageURL = 'images/elway.png'
 });

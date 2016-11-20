@@ -10,8 +10,8 @@ function rollDice() {
   $("#userDie").attr("src","images/O"+uDie+".png");
 
   if(zDie === uDie) {
-    status.innerHTML += "Tie... roll again"
-    $("#winner").attr("src","images/tie.jpg");
+    status.innerHTML += "Tie... Roll Again"
+    $("#winner").attr("src","images/tie.png");
 
   } else if (zDie > uDie) {
     $("#winner").attr("src","images/zombie.gif");
