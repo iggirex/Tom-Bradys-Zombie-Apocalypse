@@ -29,10 +29,22 @@
                     <option value="2">2</option>
                     <option value="3">3</option>
                 </select>
-
-                <div id="visual">
-
-                </div>
+                    <div id="visual">
+                        <div class="dice">
+                            <img id="zombieDie" src="images/zombie.gif" />
+                        </div>
+                        <div class="dice2">
+                            <img id="userDie" src="images/zombie_killer.jpg" />
+                        </div>
+                        <br>
+                    </div>
+                    <div id="control">
+                        <button id="roll" type="button" name="button" onclick="rollDice()"></button>
+                    </div>
+                    <div id="message">
+                        <img id="winner" src="images/letsplay.png" />
+                        <h2 id='status'></h2>
+                    </div>
                 <div id="control">
                     <button id="roll" type="button" name="button" onclick="rollDice()"></button>
                 </div>

@@ -83,8 +83,8 @@ function startPlayersTurn(player) {
 
 	controlDiv.html('');
 
-	let noButton = $('<a>')
-	let yesButton = $('<a>')
+	let noButton = $('<a class="btn btn-danger">')
+	let yesButton = $('<a class="btn btn-success">')
 	noButton.text('No');
 	yesButton.text('Yes');
 
@@ -101,9 +101,9 @@ function startPlayersTurn(player) {
 	controlDiv.append(yesButton);
 	controlDiv.append(noButton);
 
-	visualDiv.html("<img src='" + user.selectedHero.imageURL + " ' />");
+	visualDiv.html("<img style='max-height: 200px;' src='" + user.selectedHero.imageURL + " ' />");
 
-	messageDiv.html(message);
+	messageDiv.html('<p class="text-primary" >' + message + '</p>');
 
 }
 
@@ -119,6 +119,7 @@ function placeTroops(numberOfTroops) {
 	for (var i = 0; i < numberOfTroops; i++) {
 		controlDiv.append($('<a class="btn btn-primary" > troop </a>' ));
 	}
+
 };
 
 
@@ -187,6 +188,8 @@ function setBoard(territories) {
 		], {color: color}).addTo(map)
 
 		polygon.on( 'click', (x) => {selectedTerritory = territory});
+
+
 		placeMarkers(territory, color);
 
 	}
@@ -204,12 +207,22 @@ function placeMarkers(territory, color) {
 	long = long / territory.coordinates.length;
 	lat = lat / territory.coordinates.length;
 
-	let marker = L.marker([long, lat]).addTo(map);
+	if (color == 'red') {
+		let marker = L.marker([long, lat], {icon: zombieIcon}).addTo(map);
+	} else {
+		let marker = L.marker([long, lat], {icon: heroIcon}).addTo(map);
+	}
+
+
 
 	for(var i = 1; i < territory.troops; i++) {
 		let center = [long, lat];
 		let newPoint = [(long + territory.coordinates[i][0]) / 2, (lat + territory.coordinates[i][1]) / 2]
-		let marker = L.marker(newPoint).addTo(map);
+		if(color == 'red') {
+			let marker = L.marker(newPoint, {icon: zombieIcon}).addTo(map);
+		} else {
+			let marker =L.marker(newPoint,{icon: heroIcon}).addTo(map)
+		}
 	}
 }
 
